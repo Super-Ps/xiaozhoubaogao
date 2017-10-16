@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>获取数据</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        $("button").click(function(){
+            $.get("data.txt",function(data){ //get方法可以请求数据，第一个参数是请求的url，这里是文件路径，因为是根目录，做一只写文件名就可以了。
+                alert(data);   //data是形参，可以换成其他名字，data就是从后台获取的数据了。
+            })
+        })
+    </script>
+</body>
+</html>
