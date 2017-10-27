@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            /* 通配符选择器，可以选择器所有元素 */
+            margin:0px;
+            padding:0px;
+            /* 有些元素具有默认的内外边距，为了不影响我们的正常布局，我们要先把他们的初始边距清零 */
+        }
+        .box1{
+            width:300px;
+            height:300px;
+            border:1px solid red;
+
+            /* 设置左外边距 */
+            margin-left:100px;  
+        }
+        .box2{
+            width:300px;
+            height:300px;
+            border:1px solid blue;
+
+            /* 设置上外边距 */
+            margin-top:100px;  
+
+            /* 设置上内边距,边框会和内容有一定填充距离,并且容器的高度也收到影响 */
+            padding-top:100px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box1">
+        <h2>内容1</h2>
+    </div>
+    <div class="box2">
+        <h2>内容2</h2>
+    </div>
+</body>
+</html>

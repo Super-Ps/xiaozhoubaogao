@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a{
+            /* 为所有a标签设置宽高，不起作用,只能看到边框 */
+            width:100px;
+            height:100px;
+            border:1px solid red;
+        }
+        img{
+            /* 内联块元素可以在同一行显示，可以设置宽高  */
+            width:100px;
+            height:100px;
+        }
+        p{
+            /* 块元素独占一行，可以设置宽高 */
+            width:200px;
+            height:200px;
+            border:1px solid blue;
+        }
+    </style>    
+</head>
+<body>
+    <div>
+        <h2>内联元素可以在同一行显示，但不能设置宽高</h2>
+        <a href="http://baidu.com">百度</a>
+        <a href="http://baidu.com">腾讯</a>
+        <span>阿里</span>
+    </div>
+    <div>
+        <h2>内联块元素可以在同一行显示，可以设置宽高</h2>
+        <img src="../images/wei.jpg" alt="">
+        <img src="../images/wei.jpg" alt="">
+        <img src="../images/wei.jpg" alt="">
+    </div>
+    <div>
+        <h2>块元素独占一行，可以设置宽高</h2>
+        <p>我是一个块元素</p>
+        <p>我是一个块元素</p>
+        <p>我是一个块元素</p>
+    </div>
+</body>
+</html>
