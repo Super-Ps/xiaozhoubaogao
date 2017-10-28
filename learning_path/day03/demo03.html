@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+        .box:hover{
+            /* 当鼠标悬浮在div上的时候，背景色变红 */
+            background-color: red;
+        }
+
+        .nav li{
+            list-style: none;  /*去掉列表前面的点*/
+            float: left;  /*列表元素浮动，让才当横向排列*/
+            width:80px;
+            height:30px;
+            text-align: center;
+            line-height: 30px;  /*行高与容器高相同，可以设置垂直居中*/
+            border:1px solid red;
+        }
+
+        .nav li:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>伪类选择器</h2>
+    <div class="box"></div>
+
+    <h2>伪类选择器菜单（鼠标悬浮菜单有效果）</h2>
+    <ul class="nav">
+        <li>视频</li>
+        <li>电影</li>
+        <li>游戏</li>
+        <li>图片</li>
+        <li>音乐</li>
+    </ul>
+</body>
+</html>

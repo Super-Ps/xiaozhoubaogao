@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:100px;
+            height:100px;
+            background-color: blue;
+        }
+
+        /* box2的存在不影响其他元素排列（不占位） */
+        .box2{
+            width:100px;
+            height:100px;
+            background-color: red;
+            /* 设置绝对定位，并用top,left设置坐标位置 */
+            /* 原点是浏览器窗口左上角 */
+            position: absolute;
+            top:200px;  
+            left:200px;
+        }
+
+        .box3{
+            width:100px;
+            height:100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

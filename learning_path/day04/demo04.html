@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .bigbox1{
+            width:500px;
+            height:300px;
+            border:1px solid red;
+            position: relative;/*将该元素设置为参照物*/
+            margin:0 auto; /*水平居中*/
+        }
+
+        .smallbox1{
+            width:100px;
+            height:100px;
+            background-color:blue;
+            position: absolute;
+            top:30px;
+            left:50px;
+        }
+
+        .bigbox2{
+            width:500px;
+            height:300px;
+            border:1px solid red;
+            margin:0 auto; 
+        }
+
+        .smallbox2{
+            width:100px;
+            height:100px;
+            background-color:blue;
+            position: absolute;
+            top:530px;
+            left:750px;
+        }
+    </style>
+</head>
+<body>
+    <h2>设置参照物后,smallbox不会因为浏览器窗口的改变而改变相对bigbox的位置</h2>
+    <div class="bigbox1">
+        <div class="smallbox1"></div>
+    </div>
+    <h2>不设置参照物后,浏览器窗口大小改变后，相对位置会变化</h2>
+    <div class="bigbox2">
+        <div class="smallbox2"></div>
+    </div>
+</body>
+</html>

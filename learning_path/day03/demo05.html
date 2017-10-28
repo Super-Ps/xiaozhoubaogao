@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 菜单的样式 */
+        .nav li{
+            list-style: none;  
+            float: left;
+            width:80px;
+            height:30px;
+            text-align: center;
+            line-height: 30px;  
+            border:1px solid red;
+        }
+
+        /* 菜单下面内容的样式 */
+        .content{
+            height:100px;
+            background-color:blue;
+        }
+
+        /* 定义一个清楚浮动的类选择器 */
+        .clear::before,.clear::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box1">
+        <h2>浮动的不良影响</h2>
+        <!-- ul没有清除浮动，li与下面的内容重叠 -->
+        <ul class="nav">
+            <li>视频</li>
+            <li>电影</li>
+            <li>游戏</li>
+            <li>图片</li>
+            <li>音乐</li>
+        </ul>
+        <h2 class="content">菜单下面的内容</h2>
+    </div>
+    <div class="box2">
+        <h2>清楚浮动后的效果</h2>
+        <!-- 在ul添加clear后，效果显示正常 -->
+        <ul class="nav clear">
+            <li>视频</li>
+            <li>电影</li>
+            <li>游戏</li>
+            <li>图片</li>
+            <li>音乐</li>
+        </ul>
+        <h2 class="content">菜单下面的内容</h2>
+    </div>
+</body>
+</html>
