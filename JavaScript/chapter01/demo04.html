@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if语句语法
+        // var bool = false;
+        // console.log(1);
+        // if(bool){
+        //     console.log(2);
+        // }
+        // console.log(3);
+
+        // if语句实际应用
+        var num1 = 200;
+        var num2 = 100;
+        var operator = "*";
+        var result = 0;
+
+        // if(operator === "+"){
+        //     result = num1 + num2;
+        // }else if(operator === "-"){
+        //     result = num1 - num2;
+        // }else if(operator === "*"){
+        //     result = num1 * num2;
+        // }else if(operator === "/"){
+        //     result = num1 / num2;
+        // }
+
+        switch(operator){
+            case "+":result = num1 + num2;break;
+            case "-":result = num1 - num2;break;
+            case "*":result = num1 * num2;break;
+            case "/":result = num1 / num2;break;
+        }
+
+
+        console.log(result);
+
+    </script>
+</body>
+</html>
